@@ -6,8 +6,8 @@
   year={2022}
 }
 
-@article{wang_mp-rw-lsh_2021,
-	title = {{MP}-{RW}-{LSH}: an efficient multi-probe {LSH} solution to ANNS-<i>L</i><sub>1</sub>},
+@inproceedings{wang_mp-rw-lsh_2021,
+	title = {{MP}-{RW}-{LSH}: an efficient multi-probe {LSH} solution to {ANNS-L1}},
 	volume = {14},
 	issn = {2150-8097},
 	shorttitle = {{MP}-{RW}-{LSH}},
@@ -39,7 +39,7 @@
 	file = {Ma et al. - Jump-Starting Multivariate Time Series Anomaly Det.pdf},
 }
 
-@article{gong_set_reconcilation_2020,
+@inproceedings{gong_set_reconcilation_2020,
 	title = {Space- and computationally-efficient set reconciliation via parity bitmap sketch ({PBS})},
 	volume = {14},
 	issn = {2150-8097},
@@ -57,7 +57,7 @@
 	file = {Gong et al. - 2020 - Space- and computationally-efficient set reconcili.pdf}
 }
 
-@article{meng_sliding-window_nodate,
+@inproceedings{meng_sliding-window_nodate,
 	title = {Sliding-{Window} {QPS} ({SW}-{QPS}): {A} {Perfect} {Parallel} {Iterative} {Switching} {Algorithm} for {Input}-{Queued} {Switches}},
 	abstract = {In this work, we ﬁrst propose a parallel batch switching algorithm called Small-Batch Queue-Proportional Sampling (SB-QPS). Compared to other batch switching algorithms, SB-QPS signiﬁcantly reduces the batch size without sacriﬁcing the throughput performance and hence has much lower delay when traﬃc load is light to moderate. It also achieves the lowest possible time complexity of O(1) per matching computation per port, via parallelization. We then propose another algorithm called Sliding-Window QPS (SW-QPS). SW-QPS retains and enhances all beneﬁts of SB-QPS, and reduces the batching delay to zero via a novel switching framework called sliding-window switching. In addition, SW-QPS computes matchings of much higher qualities, as measured by the resulting throughput and delay performances, than QPS-1, the state-of-the-art regular switching algorithm that builds upon the same underlying bipartite matching algorithm.},
 	year = {2020},
@@ -70,7 +70,7 @@
 	address = {Politecnico di Milano, Italy}
 }
 
-@article{gong_idec_2020,
+@inproceedings{gong_idec_2020,
 	title = {{iDEC}: indexable distance estimating codes for approximate nearest neighbor search},
 	volume = {13},
 	issn = {2150-8097},
@@ -239,7 +239,7 @@ tag = {switching},
  year = {2018}
 }
 
-@article{yang_predictive_2017,
+@inproceedings{yang_predictive_2017,
  author = {Sen Yang and He Yan and Zihui Ge and Dongmei Wang and Jun Xu},
  doi = {10.1145/3154488},
  file = {Yang et al. - 2017 - Predictive Impact Analysis for Designing a Resilie.pdf},
@@ -256,7 +256,7 @@ tag = {switching},
  year = {2017}
 }
 
-@article{yang_safe_2017,
+@inproceedings{yang_safe_2017,
  abstract = {Load-balanced switch architectures are known to be scalable in both size and speed, which is of interest due to the continued exponential growth in Internet traffic. However, the main drawback of load-balanced switches is that packets can depart out of order from the switch. Randomized load-balancing of application flows by means of hashing on the packet header is a well-known simple solution to this packet reordering problem in which all packets belonging to the same application flow are routed through the same intermediate port and hence the same path through the switch. Unfortunately, this method of load-balancing can lead to instability, depending on the mix of flow sizes and durations in the group of flows that gets randomly assigned to route through the same intermediate port. In this paper, we show that the randomized load-balancing of application flows can be enhanced to provably guarantee both stability and packet ordering by extending the approach with safety mechanisms that can uniformly diffuse packets across the switch whenever there is a build-up of packets waiting to route through some intermediate port. Although simple and intuitive, our experimental results show that our extended randomized load-balancing approach outperforms existing load-balanced switch architectures.},
  author = {Sen Yang and Bill Lin and Jun Xu},
  doi = {10.1145/3154487},
@@ -276,7 +276,7 @@ tag = {switching},
 }
 
 
-@article{gong_queue-proportional_2017,
+@inproceedings{gong_queue-proportional_2017,
  abstract = {Most present day switching systems, in Internet routers and data-center switches, employ a single input-queued crossbar to interconnect input ports with output ports. Such switches need to compute a matching, between input and output ports, for each switching cycle (time slot). The main challenge in designing such matching algorithms is to deal with the unfortunate tradeoff between the quality of the computed matching and the computational complexity of the algorithm. In this paper, we propose a general approach that can significantly boost the performance of both SERENA and iSLIP, yet incurs only O(1) additional computational complexity at each input/output port. Our approach is a novel proposing strategy, called Queue-Proportional Sampling (QPS), that generates an excellent starter matching. We show, through rigorous simulations, that when starting with this starter matching, iSLIP and SERENA can output much better final matching decisions, as measured by the resulting throughput and delay performance, than they otherwise can.},
  author = {Long Gong and Paul Tune and Liang Liu and Sen Yang and Jun Xu},
  doi = {10.1145/3084440},
