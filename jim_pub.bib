@@ -612,22 +612,6 @@ tag = {others},
  year = {2010}
 }
 
-@inproceedings{qiu_towerdefense_2010,
- abstract = {IP prefix hijacking is one of the top security threats targeting today's Internet routing protocol. Several schemes have been proposed to either detect or mitigate prefix hijacking events. However, none of these approaches is adopted and deployed on a large-scale on the Internet for reasons such as scalability, economical practicality, or unrealistic assumptions about the collaborations among ISPs. Thus there are no actionable and deployable solutions for dealing with prefix hijacking. In this paper, we study key issues related to deploying and operating an IP prefix hijacking detection and mitigation system. Our contributions include (i) deployment strategies for hijacking detection and mitigation system (named as TowerDefense): a practical service model for prefix hijacking protection and effective algorithms for selecting agent locations for detecting and mitigating prefix hijacking attacks; and (ii) large scale experiments on PlanetLab and extensive analysis on the performance of TowerDefense.},
- author = {Tongqing Qiu and Lusheng Ji and Dan Pei and Jia Wang and Jun Xu},
- booktitle = {Proc. of IEEE International Conference on Network Protocols (ICNP)},
-  location={Kyoto, Japan},
- tag = {others},
- doi = {10.1109/ICNP.2010.5762762},
- file = {Qiu et al. - 2010 - TowerDefense Deployment strategies for battling a.pdf},
- keywords = {IP networks, routing protocols, Topology, Internet, Routing protocols, deployment strategies, Greedy algorithms, Internet routing protocol, IP prefix hijacking, Mirrors, Poles and towers, telecommunication security, TowerDefense},
- month = oct,
- pages = {134--143},
- shorttitle = {TowerDefense},
- title = {TowerDefense: Deployment strategies for battling against IP prefix hijacking},
- year = {2010}
-}
-
 @InProceedings{Nanongkai_regret_2010,
   author    = {Danupon Nanongkai and Atish Das Sarma and Ashwin Lall and Richard J. Lipton and Jun Xu},
   title     = {Regret-minimizing Representative Databases},
@@ -737,25 +721,6 @@ tag = {others},
  url = {http://www.vldb.org/pvldb/2/vldb09-385.pdf},
  urldate = {2019-01-14},
  volume = {2},
- year = {2009}
-}
-
-
-@inproceedings{qiu_locating_2009,
-abstract={Prefix hijacking is one of the top known threats on today's Internet. A number of measurement based solutions have been proposed to detect prefix hijacking events. In this paper we take these solutions one step further by addressing the problem of locating the attacker in each of the detected hijacking event. Being able to locate the attacker is critical for conducting necessary mitigation mechanisms at the earliest possible time to limit the impact of the attack, successfully stopping the attack and restoring the service. <br/> We propose a robust scheme named LOCK, for LOCating the prefix hijacKer ASes based on distributed Internet measurements. LOCK locates each attacker AS by actively monitoring paths (either in the control-plane or in the data-plane) to the victim prefix from a small number of carefully selected monitors distributed on the Internet. Moreover, LOCK is robust against various countermeasures that the hijackers may employ. This is achieved by taking advantage of two observations: that the hijacker cannot manipulate AS path before the path reaches the hijacker, and that the paths to victim prefix "converge" around the hijacker AS. We have deployed LOCK on a number of PlanetLab nodes and conducted several large scale measurements and experiments to evaluate the performance. Our results show that LOCK is able to pinpoint the prefix hijacker AS with an accuracy up to 94.3%.},
- author = {Tongqing Qiu and Lusheng Ji and Dan Pei and Jia Wang and Jun Xu and Hitesh Ballani},
- booktitle = {Proc. of USENIX Security Symposium},
-  location={Montreal, Canada},
- month=aug,
- editor = {Monrose, Fabian},
- file = {Qiu et al. - 2009 - Locating Prefix Hijackers using LOCK.pdf},
-tag = {others},
- isbn = {978-1-931971-69-0},
- pages = {135--150},
- publisher = {USENIX Association},
- title = {Locating Prefix Hijackers using LOCK},
- url = {http://www.usenix.org/events/sec09/tech/full_papers/qiu.pdf},
- urldate = {2019-01-14},
  year = {2009}
 }
 
@@ -1034,23 +999,6 @@ tag = {data streaming algorithms},
  year = {2006}
 }
 
-@inproceedings{zhao_joint_2005,
- abstract = {Detecting the sources or destinations that have communicated with a large number of distinct destinations or sources during a small time interval is an important problem in network measurement and security. Previous detection approaches are not able to deliver the desired accuracy at high link speeds (10 to 40 Gbps). In this work, we propose two novel algorithms that provide accurate and efficient solutions to this problem. Their designs are based on the insight that sampling and data streaming are often suitable for capturing different and complementary regions of the information spectrum, and a close collaboration between them is an excellent way to recover the complete information. Our first solution builds on the standard hash-based flow sampling algorithm. Its main innovation is that the sampled traffic is further filtered by a data streaming module which allows for much higher sampling rate and hence much higher accuracy. Our second solution is more sophisticated but offers higher accuracy. It combines the power of data streaming in efficiently estimating quantities associated with a given identity, and the power of sampling in collecting a list of candidate identities. The performance of both solutions are evaluated using both mathematical analysis and trace-driven experiments on real-world Internet traffic.},
- location = {Berkeley, CA, USA},
- author = {Qi Zhao and Abhishek Kumar and Jun Xu},
- booktitle = {Proc. of USENIX/ACM Internet Measurement Conference (IMC)},
- file = {imc05.pdf},
- pages = {7--7},
- publisher = {USENIX Association},
- series = {{IMC} '05},
- title = {Joint Data Streaming and Sampling Techniques for Detection of Super Sources and Destinations},
-tag = {data streaming algorithms},
- url = {http://dl.acm.org/citation.cfm?id=1251086.1251093},
- urldate = {2019-01-15},
- year = {2005}
-}
-
-
 @inproceedings{kumar_data_2005,
  abstract = {Statistical information about the flow sizes in the traffic passing through a network link helps a network operator to characterize network resource usage, infer traffic demands, detect traffic anomalies, and improve network performance through traffic engineering. Previous work on estimating the flow size distribution for the complete population of flows has produced techniques that either make inferences from sampled network traffic, or use data streaming approaches. In this work, we identify and solve a more challenging problem of estimating the size distribution and other statistical information about arbitrary subpopulations of flows. Inferring subpopulation flow statistics is more challenging than the complete population counterpart, since subpopulations of interest are often specified a posteriori (i.e., after the data collection is done), making it impossible for the data collection module to "plan in advance".Our solution consists of a novel mechanism that combines data streaming with traditional packet sampling to provide highly accurate estimates of subpopulation flow statistics. The algorithm employs two data collection modules operating in parallel --- a NetFlow-like packet sampler and a streaming data structure made up of an array of counters. Combining the data collected by these two modules, our estimation algorithm uses a statistical estimation procedure that correlates and decodes the outputs (observations) from both data collection modules to obtain flow statistics for any arbitrary subpopulation. Evaluations of this algorithm on real-world Internet traffic traces demonstrate its high measurement accuracy.},
  address = {New York, NY, USA},
@@ -1134,23 +1082,6 @@ tag = {data streaming algorithms},
  month=jun,
 }
 
-
-@inproceedings{li_large-scale_2004,
-abstract={Tracing attack packets to their sources, known as IP traceback, is an important step to counter distributed denial-of-service (DDoS) attacks.  In this paper, we propose a novel packet logging based (i.e., hash-based) traceback scheme that requires an order of magnitude smaller processing and storage cost than the hash-based scheme proposed by Snoeren et al., thereby being able to scalable to much higher link speed (e.g., OC-768).  The baseline idea of our approach is to sample and log a small percentage (e.g., 3.3\%) of packets. The challenge of this low sampling rate is that much more sophisticated techniques need to be used for traceback.  Our solution is to construct the attack tree using the correlation between the attack packets sampled by neighboring routers.  The scheme using naive independent random sampling does not perform well due to the low correlation between the packets sampled by neighboring routers.  We invent a sampling scheme that improves this correlation and the overall efficiency significantly. Another major contribution of this work is that we introduce a novel information-theoretic framework for our traceback scheme to answer important questions on system parameter tuning and the fundamental trade-off between the resource used for traceback and the traceback accuracy.  Simulation results based on real-world network topologies (e.g. Skitter) match very well with results from the information-theoretic analysis.  The simulation results also demonstrate that our traceback scheme can achieve high accuracy, and scale very well to a large number of attackers (e.g., 5000+).},
- author = {Jun Li and Min-Ho Sung and Jun Xu and Li Li},
- booktitle = {Proc. of IEEE Symposium on Security and Privacy},
- month=may,
- location={Oakland, CA, USA},
- doi = {10.1109/SECPRI.2004.1301319},
- file = {IEEESP04.pdf},
- isbn = {978-0-7695-2136-7},
- pages = {115--129},
- publisher = {IEEE Computer Society},
- shorttitle = {Large-Scale IP Traceback in High-Speed Internet},
-tag = {others},
- title = {fLarge-Scale IP Traceback in High-Speed Internet: Practical Techniques and Theoretical Foundation},
- year = {2004}
-}
 
 @inproceedings{zhao_computational_2004,
  abstract = {Packet scheduling is an important mechanism to provide QoS guarantees in data networks. A scheduling algorithm generally consists of two functions: one estimates how the GPS (general processor sharing) clock progresses with respect to the real time; the other decides the order of serving packets based on an estimation of their GPS start/finish times. In this work, we answer important open questions concerning the computational complexity of performing the first function. We systematically study the complexity of computing the GPS virtual start/finish times of the packets, which has long been believed to be /spl Omega/(n) per packet but has never been either proved or refuted. We also answer several other related questions such as "whether the complexity can be lower if the only thing that needs to be computed is the relative order of the GPS finish times of the packets rather than their exact values?".},
@@ -1277,49 +1208,5 @@ tag = {packet scheduling},
   isbn      = {978-1-58113-570-1},
   location  = {Pittsburgh, PA, USA},
 }
-
-@inproceedings{Xu_design_2002,
- author = {Jun Xu and Jinliang Fan and Mostafa Ammar and Sue B. Moon},
- title = {On the Design and Performance of Prefix-Preserving IP Traffic Trace Anonymization},
- tag = {others},
- booktitle = {Proc. of 10th IEEE International Conference on Network Protocols (ICNP)},
- year = {2002},
- location = {Paris, France},
- pages = {280--289},
- month=nov,
- file={ICNP02A.pdf},
- abstract={Real-world traffic traces are crucial for Internet research, but only a very small percentage of traces collected are made public.  One major reason why traffic trace owners hesitate to make the traces publicly available is the concern that confidential and private information may be inferred from the trace.  In this paper we focus on the problem of anonymizing IP addresses in a trace.  More specifically, we are interested in {\em prefix-preserving anonymization} in which the prefix relationship among IP addresses is preserved in the anonymized trace, making such a trace usable in situations where prefix relationships are important.  The goal of our work is two fold.  First, we develop a cryptography-based, prefix-preserving anonymization technique that is provably as secure as the existing well-known TCPdpriv scheme, and unlike TCPdpriv, provides consistent prefix-preservation in large scale distributed setting.  Second, we evaluate the security properties inherent in all prefix-preserving IP address anonymization schemes (including TCPdpriv).  Through the analysis of Internet backbone traffic traces, we investigate the effect of some types of attacks on the security of any prefix-preserving anonymization algorithm.  We also derive results for the optimum manner in which an attack should proceed, which provides a bound on the effectiveness of attacks in general.},
-} 
-
-@INPROCEEDINGS{Sung_ip_2002, 
-author={Minho Sung and Jun Xu}, 
-booktitle={Proc. of IEEE International Conference on Network Protocols (ICNP)}, 
-title={IP traceback-based intelligent packet filtering: a novel technique for defending against Internet DDoS attacks},
-tag = {others},
-year={2002}, 
-location = {Paris, France},
-month=nov,
-file={ICNP02B.pdf},
-pages={302-311}, 
-abstract={Distributed denial of service (DDoS) is one of the most difficult security problems to address. While many existing techniques (e.g., IP traceback) focus on tracking the location of the attackers after-the-fact, little is done to mitigate the effect of an attack while it is raging on. We present a novel technique that can effectively filter out the majority of DDoS traffic, thus improving the overall throughput of the legitimate traffic. The proposed scheme leverages on and generalizes the IP traceback schemes to obtain the information concerning whether a network edge is on the attacking path of an attacker ("infected") or not ("clean"). We observe that while an attacker will have all the edges on its path marked as "infected", edges on the path of a legitimate client will mostly be "clean". By preferentially filtering out packets that are inscribed with the marks of "infected" edges, the proposed scheme removes most of the DDoS traffic while affecting legitimate traffic only slightly. Simulation results based on real-world network topologies (e.g., Skitter) all demonstrate that the proposed technique can improve the throughput of legitimate traffic by 3 to 7 times during DDoS attacks.}, 
-keywords={Internet;digital simulation;telecommunication traffic;telecommunication security;security of data;network topology;transport protocols;encoding;telecommunication network routing;IP traceback-based intelligent packet filtering;Internet DDoS attacks;distributed denial of service;security problem;DDoS traffic filtering;throughput;legitimate traffic;network edge;infected edges;simulation results;real-world network topologies;perimeter router model;enhanced probabilistic module;encoding;Information filtering;Information filters;Telecommunication traffic;Computer crime;Throughput;Traffic control;Web and internet services;Educational institutions;Distributed computing;Security}, 
-doi={10.1109/ICNP.2002.1181417}, 
-ISSN={1092-1648}, 
-month={Nov},}
-
-@INPROCEEDINGS{jun_unified_2002, 
-author={Jun Xu}, 
-booktitle={Proc. of IEEE 21st Symposium on Reliable Distributed Systems (SRDS)}, 
-title={A unified proof of minimum time complexity for reaching consensus and uniform consensus - an oracle-based approach},
-tag = {others},
-year={2002}, 
-location={Osaka, Japan},
-pages={102-108}, 
-abstract={In this paper, we offer new proofs to two lower bound results in distributed computing: a minimum of f+1 and f+2 rounds for reaching consensus and uniform consensus respectively when at most f fail-stop faults can happen. Here the computation model is synchronous message passing. Both proofs are based on a novel oracle argument. These two induction proofs are unified in the following sense: the induction steps are the same and only the initial step (f=0) needs to be proved separately. The techniques used in the proof offer new insights into the lower bound results in distributed computing.}, 
-keywords={computational complexity;message passing;fault tolerant computing;concurrency control;distributed computing;uniform consensus;synchronous message passing;oracle argument;lower bounds;fault tolerance;time complexity;consensus;induction proofs;Distributed computing;Message passing;Educational institutions;Computational modeling;Fault tolerance;Context;Delay systems;Algorithm design and analysis;Computer crashes;Mobile computing}, 
-doi={10.1109/RELDIS.2002.1180178}, 
-ISSN={1060-9857}, 
-file={SRDS02.pdf},
-month={Oct},}
 
 
